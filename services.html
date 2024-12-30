@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Storm Troopers Windows & Doors</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ensure this is linked to your CSS -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const headerContainer = document.getElementById('header-container');
+            if (headerContainer) {
+                fetch('header.html')
+                    .then(response => {
+                        if (!response.ok) throw new Error("Network response was not ok");
+                        return response.text();
+                    })
+                    .then(data => {
+                        headerContainer.innerHTML = data;
+                    })
+                    .catch(error => console.error('Error loading header:', error));
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="header-container"></div> <!-- Placeholder for the header -->
+
+    <div class="image-section services-banner-images">
+        <img src="images/servicesbanner.png" alt="stf components" class="centered-image">
+    </div>
+
+    <section id="services-detailed-list">
+        <div class="services-container">
+            <div class="services-group">
+                <img src="images/doorservices.png" alt="Door Services" class="services-image">
+                <h3 class="services-heading">Door Services</h3>
+                <ul class="services-list">
+                    <li class="services-list-item">Door Installation</li>
+                    <li class="services-list-item">Door Repair Services</li>
+                    <li class="services-list-item">Door Removal</li>
+                    <li class="services-list-item">Door Screen Installation</li>
+                    <li class="services-list-item">Door Screen Repair</li>
+                    <li class="services-list-item">Door Screen Replacement</li>
+                    <li class="services-list-item">Door Replacement</li>
+                </ul>
+            </div>
+            <div class="services-group">
+                <img src="images/windowservices.png" alt="Window Services" class="services-image">
+                <h3 class="services-heading">Window Services</h3>
+                <ul class="services-list">
+                    <li class="services-list-item">Window Installation</li>
+                    <li class="services-list-item">Window Repair Services</li>
+                    <li class="services-list-item">Window Removal</li>
+                    <li class="services-list-item">Window Screen Installation</li>
+                    <li class="services-list-item">Window Screen Repair</li>
+                    <li class="services-list-item">Window Screen Replacement</li>
+                    <li class="services-list-item">Window Replacement</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="services-cta-section">
+        <div class="services-cta-container">
+            <h2>READY TO GET STARTED?</h2>
+            <p>We offer expert window and door installation services. Whether you're replacing your old windows or need new door installations, our team is here to help!</p>
+            <a href="contact.html" class="services-cta-button">Request a Free Quote</a>
+        </div>
+    </section>
+    
+    
+    <!-- Footer Section --------------------------------->
+    <footer>
+        <div class="footer-container">
+          <!-- Left Section: Logo and Social Icons -->
+          <div class="footer-left">
+            <div class="footer-logo">
+              <img src="images/logo.png" alt="Storm Troopers Logo" />
+            </div>
+            <!-- Follow Us Text -->
+            <div class="follow-us">
+              <p>FOLLOW US</p>
+              <p>@StormTroopersWindowsDoors</p>
+            </div>
+            <!-- Social Icons -->
+            <div class="social-icons">
+              <a
+                href="https://www.instagram.com/stormtrooperswindowsdoors/"
+                target="_blank"
+              >
+                <img src="images/insta.jpg" alt="Instagram" />
+              </a>
+              <a
+                href="https://www.facebook.com/StormTroopersWindowsDoors"
+                target="_blank"
+              >
+                <img src="images/fb.jpg" alt="Facebook" />
+              </a>
+              <a
+                href="https://www.google.com/maps?q=7225+Sanibel+Blvd,+Fort+Myers,+FL+33908"
+                target="_blank"
+              >
+                <img src="images/location.jpg" alt="Location" />
+              </a>
+            </div>
+          </div>
+  
+        <!-- Center Section: Location and Contact -->
+        <div class="footer-center">
+            <h3 class="follow-us">OUR LOCATION</h3>
+            <p>7225 Sanibel Blvd,</p>
+            <p>Fort Myers, FL 33908</p>
+            <p>Phone: <a href="tel:+12399806960">(239) 980-6960</a></p>
+            <p>
+            Email:
+            <a
+                href="mailto:admin@stormtroopersgroup.com?subject=General%20Inquiry%20-%20STW%26D%20Website&body=Hi%20Storm%20Troopers%20Windows%20%26%20Doors,%0D%0A%0D%0AAdd%20your%20message:%0D%0A%0D%0AFirst%20Name:%20%0D%0ALast%20Name:%20%0D%0AEmail:%20%0D%0APhone%20Number:%20%0D%0AAddress:%20%0D%0AZip%20Code:%20%0D%0A%0D%0AWe%20will%20respond%20to%20your%20email%20as%20soon%20as%20possible.%20Thank%20you%20for%20choosing%20Storm%20Troopers%20Windows%20and%20Doors.%0D%0A%0D%0AStorm%20Troopers%20Windows%20and%20Doors%0D%0AOffice:%20(239)%20980-6960%0D%0A7225%20Sanibel%20Blvd%0D%0AFort%20Myers,%20FL%2033908';"
+                >admin@stormtroopersgroup.com</a
+                >
+                </p>
+        </div>
+    
+        <!-- Right Section: Quick Links -->
+        <div class="footer-right">
+            <h3 class="follow-us">QUICK LINKS</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="impactwindows.html">Impact Windows</a></li>
+              <li><a href="impactdoors.html">Impact Doors</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-bottom">
+          <p>
+              &copy; 2024 Storm Troopers Windows & Doors Company. All rights
+              reserved. | <a href="privacy-policy.html" class="privacy-link">Privacy Policy</a>
+          </p>
+          <p>
+            Storm Troopers Windows & Doors specializes in high-quality windows and
+            doors for your home or business. We pride ourselves on superior
+            craftsmanship and exceptional customer service.
+          </p>
+        </div>
+        <div class="scroll-to-top" id="scrollToTop">
+          <a href="#top">
+            <img src="images/uparrow.png" alt="Scroll to Top" />
+          </a>
+        </div>
+      </footer>
+
+    <script>
+        // Fetch and insert the header content dynamically
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('aw-header-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+        });
+    </script>
+</body>
+=
+</html>

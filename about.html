@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Storm Troopers Windows & Doors</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const headerContainer = document.getElementById('header-container');
+            if (headerContainer) {
+                fetch('header.html')
+                    .then(response => {
+                        if (!response.ok) throw new Error("Network response was not ok");
+                        return response.text();
+                    })
+                    .then(data => {
+                        headerContainer.innerHTML = data;
+                    })
+                    .catch(error => console.error('Error loading header:', error));
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="header-container"></div> <!-- Placeholder for the header -->
+
+    <!-- Hero Section -->
+    <div class="image-section about-page-banner-container">
+        <img src="images/aboutbanner.png" alt="About Us Banner" class="centered-image">
+    </div>
+
+    <!-- Services and Approach Section -->
+    <section id="about-services-approach-section">
+      <div class="about-services-approach-container">
+          <h2 class="about-services-approach-heading">Our Expertise</h2>
+          <p class="about-services-approach-description">
+              At <span class="highlight">Storm Troopers Windows & Doors</span>, we go beyond just being an impact window and door company. We are experts in supplying, installing, and retailing premium-quality impact products, paired with professional waterproofing services tailored to your specific needs. Whether it's for new construction or remodeling, we offer top-tier options like EXO Air or Prosoco Fast Flash based on your project requirements.
+  
+              What truly sets us apart is our collaborative approach. We actively engage with builders and designers, ensuring that every project meets the client’s vision. Our field supervisors oversee every stage of the process—from pre-construction to post-completion—to guarantee that the highest quality standards are met.
+  
+              In new construction projects, we work closely with masons to provide masonry openings (MO's), ensuring seamless operations. Our partnerships with industry leaders such as Eastern, Mr. Glass, Assura, ES, PGT, Therma Tru, WinDoor, and JeldWen guarantee that we deliver only the best products. We proudly collaborate with renowned builders like Alair Homes, Sinclair Homes, Coconut Bay Construction, Alfonova Nelson Homes, Naples Kitchen & Bath, South Florida Millwork, and Fort Myers Beach Builders.
+  
+              At <span class="highlight">Storm Troopers Windows & Doors</span>, we’re committed to delivering exceptional results, building lasting relationships, and exceeding your expectations in every project.
+          </p>
+      </div>
+  </section>
+  
+
+    <!-- Partnerships and Suppliers Section -->
+    <section id="about-partners-suppliers-section">
+        <div class="about-partners-suppliers-container">
+            <h2 class="about-partners-suppliers-heading">Trusted Partners</h2>
+            <p class="about-partners-suppliers-description">
+                We collaborate with top suppliers such as Eastern, Mr. Glass, Assura, ES, PGT, Therma Tru, WinDoor, and JeldWen for custom solid wood doors. We have also established partnerships with reputable builders, including:
+            </p>
+            <ul class="about-partners-list">
+                <li class="about-partner-item">Alair Homes</li>
+                <li class="about-partner-item">Sinclair Homes</li>
+                <li class="about-partner-item">Coconut Bay Construction</li>
+                <li class="about-partner-item">Alfonova Nelson Homes</li>
+                <li class="about-partner-item">Naples Kitchen & Bath</li>
+                <li class="about-partner-item">South Florida Millwork</li>
+                <li class="about-partner-item">Fort Myers Beach Builders</li>
+            </ul>
+            <!-- Images Section -->
+          <div class="about-partners-images">
+            <img src="images/eastern.jpg" alt="Partner 1 Logo" class="partner-image">
+            <img src="images/mrglass.png" alt="Partner 2 Logo" class="partner-image">
+            <img src="images/assura.jpg" alt="Partner 3 Logo" class="partner-image">
+            <img src="images/es.jpg" alt="Partner 4 Logo" class="partner-image">
+            <img src="images/pgt.jpg" alt="Partner 5 Logo" class="partner-image">
+            <img src="images/thermatru.jpg" alt="Partner 6 Logo" class="partner-image">
+            <img src="images/windor.jpg" alt="Partner 7 Logo" class="partner-image">
+            <img src="images/jeldwen.jpg" alt="Partner 8 Logo" class="partner-image">
+            <img src="images/alairhomes.png" alt="Partner 9 Logo" class="partner-image">
+            <img src="images/sinclairhomes.jpg" alt="Partner 10 Logo" class="partner-image">
+            <img src="images/coconutbayconstruction.png" alt="Partner 11 Logo" class="partner-image">
+            <img src="images/Alfonova Nelson Homes.png" alt="Partner 12 Logo" class="partner-image">
+            <img src="images/napleskitchenandbath.jpg" alt="Partner 13 Logo" class="partner-image">
+            <img src="images/southfloridamillwork.png" alt="Partner 14 Logo" class="partner-image">
+          </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="fw-pw-cta">
+      <div class="fw-pw-cta-text">
+          <h2 class="fw-pw-cta-heading">Get Your Free Estimate Today</h2>
+          <p class="fw-pw-cta-description">Contact us now to schedule a consultation or request a free estimate for your Impact Doors or Windows. Protect your home with the best!</p>
+      </div>
+      <a href="mailto:admin@stormtroopersgroup.com?subject=Free Estimate Request&body=First Name:%20%0A%20Last Name:%20%0A%20Email:%20%0A%20Phone Number:%20%0A%20Address:%20%0A%20Zip Code:%20%0A%0A%20We%20will%20respond%20to%20your%20email%20as%20soon%20as%20possible.%20Thank%20you%20for%20choosing%20Storm%20Troopers%20Windows%20and%20Doors.%20%0A%0A%20Storm%20Troopers%20Windows%20and%20Doors%0A%20Office:%20(239)%20980-6960%0A%207225%20Sanibel%20Blvd%0A%20Fort%20Myers,%20FL%2033908"
+          class="fw-pw-cta-button">Request a Quote</a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+          <!-- Left Section: Logo and Social Icons -->
+          <div class="footer-left">
+            <div class="footer-logo">
+              <img src="images/logo.png" alt="Storm Troopers Logo" />
+            </div>
+            <!-- Follow Us Text -->
+            <div class="follow-us">
+              <p>FOLLOW US</p>
+              <p>@StormTroopersWindowsDoors</p>
+            </div>
+            <!-- Social Icons -->
+            <div class="social-icons">
+              <a
+                href="https://www.instagram.com/stormtrooperswindowsdoors/"
+                target="_blank"
+              >
+                <img src="images/insta.jpg" alt="Instagram" />
+              </a>
+              <a
+                href="https://www.facebook.com/StormTroopersWindowsDoors"
+                target="_blank"
+              >
+                <img src="images/fb.jpg" alt="Facebook" />
+              </a>
+              <a
+                href="https://www.google.com/maps?q=7225+Sanibel+Blvd,+Fort+Myers,+FL+33908"
+                target="_blank"
+              >
+                <img src="images/location.jpg" alt="Location" />
+              </a>
+            </div>
+          </div>
+  
+        <!-- Center Section: Location and Contact -->
+        <div class="footer-center">
+            <h3 class="follow-us">OUR LOCATION</h3>
+            <p>7225 Sanibel Blvd,</p>
+            <p>Fort Myers, FL 33908</p>
+            <p>Phone: <a href="tel:+12399806960">(239) 980-6960</a></p>
+            <p>
+            Email:
+            <a
+                href="mailto:admin@stormtroopersgroup.com?subject=General%20Inquiry%20-%20STW%26D%20Website&body=Hi%20Storm%20Troopers%20Windows%20%26%20Doors,%0D%0A%0D%0AAdd%20your%20message:%0D%0A%0D%0AFirst%20Name:%20%0D%0ALast%20Name:%20%0D%0AEmail:%20%0D%0APhone%20Number:%20%0D%0AAddress:%20%0D%0AZip%20Code:%20%0D%0A%0D%0AWe%20will%20respond%20to%20your%20email%20as%20soon%20as%20possible.%20Thank%20you%20for%20choosing%20Storm%20Troopers%20Windows%20and%20Doors.%0D%0A%0D%0AStorm%20Troopers%20Windows%20and%20Doors%0D%0AOffice:%20(239)%20980-6960%0D%0A7225%20Sanibel%20Blvd%0D%0AFort%20Myers,%20FL%2033908';"
+                >admin@stormtroopersgroup.com</a
+                >
+                </p>
+        </div>
+    
+        <!-- Right Section: Quick Links -->
+        <div class="footer-right">
+            <h3 class="follow-us">QUICK LINKS</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="impactwindows.html">Impact Windows</a></li>
+              <li><a href="impactdoors.html">Impact Doors</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-bottom">
+          <p>
+              &copy; 2024 Storm Troopers Windows & Doors Company. All rights
+              reserved. | <a href="privacy-policy.html" class="privacy-link">Privacy Policy</a>
+          </p>
+          <p>
+            Storm Troopers Windows & Doors specializes in high-quality windows and
+            doors for your home or business. We pride ourselves on superior
+            craftsmanship and exceptional customer service.
+          </p>
+        </div>
+        <div class="scroll-to-top" id="scrollToTop">
+          <a href="#top">
+            <img src="images/uparrow.png" alt="Scroll to Top" />
+          </a>
+        </div>
+      </footer>
+
+    <script>
+        // Fetch and insert the header content dynamically
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('aw-header-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+        });
+    </script>
+</body>
+</html>

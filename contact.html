@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Storm Troopers Windows & Doors</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="header-container"></div>
+    <!-- This will load header -->
+
+    <!-- Contact Us Banner Section -->
+    <div class="contact-us-banner">
+      <img
+        src="images/contactus.png"
+        alt="Contact Us Banner"
+        class="contact-banner-image"
+      />
+
+      <!-- Left Buttons: Call Us, Request a Free Estimate, and Book Consultation -->
+      <div class="info-box right-info">
+        <div class="button-container left-buttons">
+          <!-- "CALL US" Image -->
+          <div class="call-us-image-container">
+            <img src="images/callus.png" alt="Call Us" class="call-us-image" />
+          </div>
+
+          <!-- "REQUEST A FREE ESTIMATE" Button -->
+          <a
+            href="mailto:admin@stormtroopersgroup.com?subject=Free Estimate Request&body=First Name:%20%0A%20Last Name:%20%0A%20Email:%20%0A%20Phone Number:%20%0A%20Address:%20%0A%20Zip Code:%20%0A%0A%20We%20will%20respond%20to%20your%20email%20as%20soon%20as%20possible.%20Thank%20you%20for%20choosing%20Storm%20Troopers%20Windows%20and%20Doors.%20%0A%0A%20Storm%20Troopers%20Windows%20and%20Doors%0A%20Office:%20(239)%20980-6960%0A%207225%20Sanibel%20Blvd%0A%20Fort%20Myers,%20FL%2033908"
+            class="contact-estimate-btn"
+          >
+            REQUEST A FREE<br />ESTIMATE
+          </a>
+
+          <!-- "BOOK A FREE CONSULTATION" Button -->
+          <a
+            href="mailto:admin@stormtroopersgroup.com?subject=Consultation Request&body=First Name:%20%0A%20Last Name:%20%0A%20Email:%20%0A%20Phone Number:%20%0A%20Address:%20%0A%20Zip Code:%20%0A%0A%20We%20will%20respond%20to%20your%20email%20as%20soon%20as%20possible.%20Thank%20you%20for%20choosing%20Storm%20Troopers%20Windows%20and%20Doors.%20%0A%0A%20Storm%20Troopers%20Windows%20and%20Doors%0A%20Office:%20(239)%20980-6960%0A%207225%20Sanibel%20Blvd%0A%20Fort%20Myers,%20FL%2033908"
+            class="contact-consultation-btn"
+          >
+            BOOK A FREE<br />CONSULTATION
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Buttons: Response Rate, Email Us, and Locate Us -->
+      <div class="info-box email-locate-info">
+        <div class="button-container email-locate-buttons">
+          <!-- Response Rate Image -->
+          <div class="response-rate-image-container">
+            <img
+              src="images/responserate.png"
+              alt="Response Rate"
+              class="response-rate-image"
+            />
+          </div>
+
+          <!-- Email Us Button -->
+          <div class="email-us-button">
+            <button
+              onclick="window.location.href='mailto:admin@stormtroopersgroup.com?subject=General%20Inquiry%20-%20STW%26D%20Website&body=Hi%20Storm%20Troopers%20Windows%20%26%20Doors,%0D%0A%0D%0AAdd%20your%20message:%0D%0A%0D%0AFirst%20Name:%20%0D%0ALast%20Name:%20%0D%0AEmail:%20%0D%0APhone%20Number:%20%0D%0AAddress:%20%0D%0AZip%20Code:%20%0D%0A%0D%0AWe%20will%20respond%20to%20your%20email%20as%20soon%20as%20possible.%20Thank%20you%20for%20choosing%20Storm%20Troopers%20Windows%20and%20Doors.%0D%0A%0D%0AStorm%20Troopers%20Windows%20and%20Doors%0D%0AOffice:%20(239)%20980-6960%0D%0A7225%20Sanibel%20Blvd%0D%0AFort%20Myers,%20FL%2033908';"
+            >
+              EMAIL US
+            </button>
+          </div>
+
+          <!-- Locate Us Button -->
+          <div class="locate-us-button">
+            <button onclick="scrollToLocation()">LOCATE US</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="contact-us">
+      <!-- Image Section for Contact Header -->
+      <div class="contact-header-image">
+        <img src="images/contactmidheader.png" alt="Contact Us Banner" />
+      </div>
+
+      <div class="contact-info">
+        <!-- Replace OPERATING HOURS heading with image -->
+        <div class="operating-hours-image">
+          <img src="images/operatinghours.png" alt="Operating Hours" />
+        </div>
+
+        <ul class="operating-hours">
+          <li>
+            <span class="day">MONDAY</span>
+            <span class="hours">8:00 AM - 6:00 PM</span>
+          </li>
+          <li>
+            <span class="day">TUESDAY</span>
+            <span class="hours">8:00 AM - 6:00 PM</span>
+          </li>
+          <li>
+            <span class="day">WEDNESDAY</span>
+            <span class="hours">8:00 AM - 6:00 PM</span>
+          </li>
+          <li>
+            <span class="day">THURSDAY</span>
+            <span class="hours">8:00 AM - 6:00 PM</span>
+          </li>
+          <li>
+            <span class="day">FRIDAY</span>
+            <span class="hours">8:00 AM - 6:00 PM</span>
+          </li>
+          <li class="closed">
+            <span class="day">SATURDAY</span>
+            <span class="hours">Closed</span>
+          </li>
+          <li class="closed">
+            <span class="day">SUNDAY</span>
+            <span class="hours">Closed</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="location-section">
+      <div class="location-container">
+        <!-- Google Map Embed -->
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.7615113319857!2d-81.83740912457593!3d26.463415376917958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88db1677366d5b9d%3A0xa6a777eb110c8af!2s7225%20Sanibel%20Blvd%2C%20Fort%20Myers,%20FL%2033908!5e0!3m2!1sen!2sus!4v1733274671338!5m2!1sen!2sus"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+
+        <!-- Business Information -->
+        <div class="business-info">
+          <div class="business-info-header">
+            <img
+              src="images/bymapinfo.png"
+              alt="Business Info Header"
+              class="bymapinfo-image"
+            />
+          </div>
+          <p>
+            <strong>Address:</strong>
+            <span class="address-line1">7225 Sanibel Blvd,</span>
+            <span class="address-line2">Fort Myers, FL 33908</span>
+          </p>
+          <p><strong>Office:</strong> (239) 980-6960</p>
+          <p>
+            <strong>Email:</strong>
+            <a
+              href="mailto:admin@stormtroopersgroup.com?subject=General%20Inquiry%20-%20STW%26D%20Website&body=Hi%20Storm%20Troopers%20Windows%20%26%20Doors,%0D%0A%0D%0AAdd%20your%20message:%0D%0A%0D%0AFirst%20Name:%20%0D%0ALast%20Name:%20%0D%0AEmail:%20%0D%0APhone%20Number:%20%0D%0AAddress:%20%0D%0AZip%20Code:%20%0D%0A%0D%0AWe%20will%20respond%20to%20your%20email%20as%20soon%20as%20possible.%20Thank%20you%20for%20choosing%20Storm%20Troopers%20Windows%20and%20Doors.%0D%0A%0D%0AStorm%20Troopers%20Windows%20and%20Doors%0D%0AOffice:%20(239)%20980-6960%0D%0A7225%20Sanibel%20Blvd%0D%0AFort%20Myers,%20FL%2033908';"
+            >
+            admin@stormtroopersgroup.com
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <!-- Left Section: Logo and Social Icons -->
+        <div class="footer-left">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="Storm Troopers Logo" />
+          </div>
+          <!-- Follow Us Text -->
+          <div class="follow-us">
+            <p>FOLLOW US</p>
+            <p>@StormTroopersWindowsDoors</p>
+          </div>
+          <!-- Social Icons -->
+          <div class="social-icons">
+            <a
+              href="https://www.instagram.com/stormtrooperswindowsdoors/"
+              target="_blank"
+            >
+              <img src="images/insta.jpg" alt="Instagram" />
+            </a>
+            <a
+              href="https://www.facebook.com/StormTroopersWindowsDoors"
+              target="_blank"
+            >
+              <img src="images/fb.jpg" alt="Facebook" />
+            </a>
+            <a
+              href="https://www.google.com/maps?q=7225+Sanibel+Blvd,+Fort+Myers,+FL+33908"
+              target="_blank"
+            >
+              <img src="images/location.jpg" alt="Location" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Center Section: Location and Contact -->
+        <div class="footer-center">
+            <h3 class="follow-us">OUR LOCATION</h3>
+            <p>7225 Sanibel Blvd,</p>
+            <p>Fort Myers, FL 33908</p>
+            <p>Phone: <a href="tel:+12399806960">(239) 980-6960</a></p>
+                <p>
+                Email:
+                    <a
+                    href="mailto:admin@stormtroopersgroup.com?subject=General%20Inquiry%20-%20STW%26D%20Website&body=Hi%20Storm%20Troopers%20Windows%20%26%20Doors,%0D%0A%0D%0AAdd%20your%20message:%0D%0A%0D%0AFirst%20Name:%20%0D%0ALast%20Name:%20%0D%0AEmail:%20%0D%0APhone%20Number:%20%0D%0AAddress:%20%0D%0AZip%20Code:%20%0D%0A%0D%0AWe%20will%20respond%20to%20your%20email%20as%20soon%20as%20possible.%20Thank%20you%20for%20choosing%20Storm%20Troopers%20Windows%20and%20Doors.%0D%0A%0D%0AStorm%20Troopers%20Windows%20and%20Doors%0D%0AOffice:%20(239)%20980-6960%0D%0A7225%20Sanibel%20Blvd%0D%0AFort%20Myers,%20FL%2033908';"
+                    >admin@stormtroopersgroup.com</a
+                    >
+                </p>
+        </div>
+  
+  <!-- Right Section: Quick Links -->
+  <div class="footer-right">
+    <h3 class="follow-us">QUICK LINKS</h3>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="impactwindows.html">Impact Windows</a></li>
+      <li><a href="impactdoors.html">Impact Doors</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+  </div>
+  
+      <div class="footer-bottom">
+        <p>
+            &copy; 2024 Storm Troopers Windows & Doors Company. All rights
+            reserved. | <a href="privacy-policy.html" class="privacy-link">Privacy Policy</a>
+        </p>
+        <p>
+          Storm Troopers Windows & Doors specializes in high-quality windows and
+          doors for your home or business. We pride ourselves on superior
+          craftsmanship and exceptional customer service.
+        </p>
+      </div>
+      <div class="scroll-to-top" id="scrollToTop">
+        <a href="#top">
+          <img src="images/uparrow.png" alt="Scroll to Top" />
+        </a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+      // Smooth scroll to location section, considering the header height
+      function scrollToLocation() {
+        const locationSection = document.getElementById("location-section");
+        const headerHeight =
+          document.getElementById("header-container").offsetHeight;
+
+        window.scrollTo({
+          top: locationSection.offsetTop - headerHeight,
+          behavior: "smooth",
+        });
+      }
+
+      // Select the scroll-to-top button
+      const scrollToTop = document.getElementById("scrollToTop");
+
+      // Show or hide the button based on scroll position
+      window.addEventListener("scroll", () => {
+        // Check how far the user has scrolled
+        if (window.scrollY > 200) {
+          // Show the button
+          scrollToTop.style.display = "block";
+        } else {
+          // Hide the button
+          scrollToTop.style.display = "none";
+        }
+      });
+
+      // Smooth scrolling to the top when the button is clicked
+      scrollToTop.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent default link behavior
+        window.scrollTo({
+          top: 0, // Scroll to the very top of the page
+          behavior: "smooth", // Smooth scrolling animation
+        });
+      });
+    </script>
+  </body>
+</html>
